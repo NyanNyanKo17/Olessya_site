@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Портфолио | Олеся Епишко</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Личный сайт-портфолио веб-разработчика">
+    <meta name="keywords" content="портфолио, веб-разработка, HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Кнопка наверх -->
+    <button id="scrollToTop" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#home" class="logo">Portfolio<span>.</span></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="menu">
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> Обо мне</a></li>
+                    <li><a href="#portfolio" class="nav-link"><i class="fas fa-briefcase"></i> Портфолио</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Навыки</a></li>
+                    <li><a href="#contacts" class="nav-link"><i class="fas fa-envelope"></i> Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 class="hero-title">Привет, я <span class="highlight">Олеся Епишко</span></h1>
+                <p class="hero-subtitle">Фронтенд-разработчик и веб-дизайнер</p>
+                <p class="hero-description">Создаю современные, адаптивные и удобные веб-сайты с использованием HTML, CSS и JavaScript</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Смотреть работы</a>
+                    <a href="#contacts" class="btn btn-secondary">Связаться со мной</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/photo.jpg" alt="Фото Олеси Епишко" class="profile-photo">
+                <div class="photo-border"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="Рабочее место">
+                </div>
+                <div class="about-text">
+                    <h3>Мой путь в веб-разработке</h3>
+                    <p>Я начинающий специалист, который увлечен созданием современных веб-сайтов. Моя цель — разрабатывать не только красивые, но и функциональные интерфейсы, которые обеспечивают отличный пользовательский опыт.</p>
+                    <p>Этот сайт полностью создан вручную с использованием чистого HTML, CSS и JavaScript, что позволило мне реализовать индивидуальный дизайн и уникальную функциональность без использования готовых шаблонов.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Образование</h4>
+                                <p>Курсы веб-разработки, 2024</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Локация</h4>
+                                <p>Санкт-Петербург, Россия</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Мои навыки</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML/CSS</h3>
+                    <p>Семантическая верстка, адаптивный дизайн, CSS Grid, Flexbox</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="90"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Базовый синтаксис, DOM-манипуляции, работа с API, ES6+</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="75"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Дизайн</h3>
+                    <p>Прототипирование, пользовательские интерфейсы, Adobe XD</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <h2 class="section-title">Мои работы</h2>
+            <div class="portfolio-controls">
+                <button class="filter-btn active" data-filter="all">Все работы</button>
+                <button class="filter-btn" data-filter="web">Веб-сайты</button>
+                <button class="filter-btn" data-filter="design">Дизайн</button>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel">
+                    <button class="carousel-btn prev" aria-label="Предыдущий слайд">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="carousel-track">
+                        <div class="carousel-slide" data-category="web">
+                            <img src="images/work1.jpg" alt="Веб-сайт компании" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <h3>Корпоративный сайт</h3>
+                                <p>HTML, CSS, JavaScript</p>
+                                <a href="#" class="portfolio-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="carousel-slide" data-category="design">
+                            <img src="images/work2.jpg" alt="Дизайн интерфейса" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <h3>UI/UX Дизайн</h3>
+                                <p>Adobe XD, Figma</p>
+                                <a href="#" class="portfolio-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="carousel-slide" data-category="web">
+                            <img src="images/work3.jpg" alt="Интернет-магазин" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <h3>Интернет-магазин</h3>
+                                <p>HTML, CSS, JavaScript</p>
+                                <a href="#" class="portfolio-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" aria-label="Следующий слайд">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="carousel-indicators">
+                    <!-- Индикаторы будут добавляться через JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="section contacts">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <div class="contacts-container">
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Телефон</h4>
+                            <a href="tel:+79119100925">+7 (911) 910-09-25</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:oleepi2@mail.ru">oleepi2@mail.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>Санкт-Петербург, Россия</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://vk.com/id384183232" target="_blank" class="social-link">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://web.telegram.org/k/#@Lessya12" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Отправить сообщение
+                        </button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home" class="logo">Portfolio<span>.</span></a>
+                    <p>Создание современных и адаптивных веб-сайтов</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone"></i> +7 (911) 910-09-25</p>
+                    <p><i class="fas fa-envelope"></i> oleepi2@mail.ru</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Олеся Епишко. Все права защищены.</p>
+                <p>Сайт создан с использованием HTML, CSS и JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
